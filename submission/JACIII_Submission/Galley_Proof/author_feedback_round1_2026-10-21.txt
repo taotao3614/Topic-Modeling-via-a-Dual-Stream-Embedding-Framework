@@ -1,0 +1,63 @@
+Dear Editor,
+
+Thank you for preparing the galley proof of our manuscript (Jc26-0016).
+Our answers and corrections are as follows.
+
+1. Unknown years in the profiles (Question 1)
+
+The missing years are listed below and are also reflected in the uploaded
+revised profile file (Jc26-0016_profile_revised.docx).
+
+Dr. Mahmoud:
+ - 2012 Received M.S. degree in Computer Science (Virtual Reality) from Helwan University
+ - 2020 Received Ph.D. degree in Computer Science (Bioinformatics) from Mansoura University
+ - 2025- Associate Professor, Department of Computer Science, Faculty of Computers and
+   Information, Kafrelsheikh University
+ - 2026- Visiting Associate Professor, Sophia University
+
+Dr. Takaoka:
+ - 2015- Professor, Department of Information and Communication Sciences, Faculty of
+   Science and Technology, Sophia University
+ - 2019- Visiting Professor, The Open University of Japan
+
+2. Visual Abstract (Question 2)
+
+We would like to use Fig. 1 (System workflow of the proposed dual-stream topic
+modelling framework) as the representative image, with the caption:
+"Dual-stream fusion of text and MeSH"
+
+3. Replacement of Fig. 6 and Fig. 7 (files uploaded)
+
+While proofreading, we found that the bar values in Fig. 6 and Fig. 7 do not match
+Table 2 and Table 4, which the text and figure captions refer to. This was caused by
+an error in our plotting script. In Fig. 6, the TC+TD bars showed the sum of the best
+TC and the best TD, which are attained at different parameter settings, instead of the
+"Best TC+TD" values in Table 2. Fig. 7 contained values that do not correspond to the
+configurations reported in Table 4.
+
+We have regenerated both figures using exactly the values in Table 2 and Table 4.
+The layout and style are unchanged, and the text, tables, and captions require no
+changes. No new results are introduced. We would be grateful if you could replace
+the two figures with the uploaded files:
+ - Fig6_fig_model_comparison_bar.pdf (Fig. 6)
+ - Fig7_fig_ablation_comparison.pdf (Fig. 7)
+
+4. Revised author profile file (uploaded)
+
+Following your e-mail regarding Dr. Mahmoud's affiliation, we have uploaded a
+revised author profile file (Jc26-0016_profile_revised.docx). It includes the
+missing years above and adds Dr. Mahmoud's current affiliation (Egypt-Japan
+University of Science and Technology) to her profile, both in the Affiliation field
+and as the following new line in her Brief Biographical History:
+ - 2026- Associate Professor, Department of Bioinformatics, Faculty of Computer Science
+   and Information Technology, Egypt-Japan University of Science and Technology,
+   Alexandria, Egypt
+The affiliation below the title remains unchanged.
+
+5. Correction in Dr. Mahmoud's profile (page 16, Main Works)
+
+"IEEE Access, Vol.12, pp. 1865-1879, 2023." -> "IEEE Access, Vol.12, pp. 1865-1879, 2024."
+(DOI: 10.1109/ACCESS.2023.3334641)
+
+Best regards,
+Tao Tao (on behalf of all authors)

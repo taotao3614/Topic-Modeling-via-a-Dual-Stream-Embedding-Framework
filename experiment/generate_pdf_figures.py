@@ -130,7 +130,9 @@ def save_model_comparison_bar(out_path):
     ]
     tc_vals  = [0.6172, 0.6038, 0.6076, 0.5826]
     td_vals  = [0.7458, 0.7333, 0.7143, 0.7000]
-    sum_vals = [tc + td for tc, td in zip(tc_vals, td_vals)]
+    # Table 2 "Best TC+TD" (best combined score at a single (alpha, beta) setting).
+    # Do NOT use Best TC + Best TD: those are attained at different settings.
+    sum_vals = [1.3443, 1.3247, 1.3005, 1.2331]
 
     baseline_sum = 1.2530   # reference model 3
 
@@ -176,17 +178,16 @@ def save_model_comparison_bar(out_path):
 def save_ablation_bar(out_path):
     configs = [
         "Baseline\n(all-MiniLM\nsingle-stream)",
-        "A1: Text only\n(no MeSH stream)",
-        "A2: Concat\n(no weighting)",
-        "A3: MeSH-only\n(no text stream)",
-        "A4: Equal\nweight (α=0.5)",
-        "Dual PubMedBERT\n(optimal)",
+        "A1: Abstract only",
+        "A2: Title +\nAbstract",
+        "A3: Abstract +\nMeSH",
+        "A4: Title +\nAbstract + MeSH",
+        "Dual-stream\n(Full + α–β fusion)",
     ]
-    # Values from the manuscript Table 4 / ablation section
-    # Update these numbers once the actual ablation results are confirmed
-    tc_vals  = [0.5360, 0.5636, 0.5451, 0.5000, 0.5500, 0.6172]
-    td_vals  = [0.7170, 0.7125, 0.6174, 0.6000, 0.6800, 0.7458]
-    sum_vals = [tc + td for tc, td in zip(tc_vals, td_vals)]
+    # Values from the manuscript Table 4 (corrected at the galley-proof stage, 2026-10)
+    tc_vals  = [0.5360, 0.5428, 0.5355, 0.5274, 0.5451, 0.6047]
+    td_vals  = [0.7170, 0.7136, 0.6667, 0.6087, 0.6174, 0.6958]
+    sum_vals = [1.2530, 1.2564, 1.2022, 1.1361, 1.1625, 1.3005]
 
     x = np.arange(len(configs))
     w = 0.25
